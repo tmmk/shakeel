@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */; };
+		CDFFF0201C7F61C100F664C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFF01F1C7F61C100F664C9 /* ViewController.swift */; };
+		CDFFF0231C7F61C100F664C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0211C7F61C100F664C9 /* Main.storyboard */; };
+		CDFFF0251C7F61C100F664C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0241C7F61C100F664C9 /* Assets.xcassets */; };
+		CDFFF0281C7F61C100F664C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CDFFF01A1C7F61C100F664C9 /* shakeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDFFF01F1C7F61C100F664C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDFFF0221C7F61C100F664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDFFF0241C7F61C100F664C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDFFF0271C7F61C100F664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDFFF0291C7F61C100F664C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFFF0171C7F61C100F664C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDFFF0111C7F61C100F664C9 = {
+			isa = PBXGroup;
+			children = (
+				CDFFF01C1C7F61C100F664C9 /* shakeel */,
+				CDFFF01B1C7F61C100F664C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFFF01B1C7F61C100F664C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFF01A1C7F61C100F664C9 /* shakeel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFFF01C1C7F61C100F664C9 /* shakeel */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */,
+				CDFFF01F1C7F61C100F664C9 /* ViewController.swift */,
+				CDFFF0211C7F61C100F664C9 /* Main.storyboard */,
+				CDFFF0241C7F61C100F664C9 /* Assets.xcassets */,
+				CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */,
+				CDFFF0291C7F61C100F664C9 /* Info.plist */,
+			);
+			path = shakeel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFFF0191C7F61C100F664C9 /* shakeel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFFF02C1C7F61C100F664C9 /* Build configuration list for PBXNativeTarget "shakeel" */;
+			buildPhases = (
+				CDFFF0161C7F61C100F664C9 /* Sources */,
+				CDFFF0171C7F61C100F664C9 /* Frameworks */,
+				CDFFF0181C7F61C100F664C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shakeel;
+			productName = shakeel;
+			productReference = CDFFF01A1C7F61C100F664C9 /* shakeel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFFF0121C7F61C100F664C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ccsf;
+				TargetAttributes = {
+					CDFFF0191C7F61C100F664C9 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = P4W58GG47A;
+					};
+				};
+			};
+			buildConfigurationList = CDFFF0151C7F61C100F664C9 /* Build configuration list for PBXProject "shakeel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFFF0111C7F61C100F664C9;
+			productRefGroup = CDFFF01B1C7F61C100F664C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFFF0191C7F61C100F664C9 /* shakeel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFFF0181C7F61C100F664C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFFF0281C7F61C100F664C9 /* LaunchScreen.storyboard in Resources */,
+				CDFFF0251C7F61C100F664C9 /* Assets.xcassets in Resources */,
+				CDFFF0231C7F61C100F664C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFFF0161C7F61C100F664C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFFF0201C7F61C100F664C9 /* ViewController.swift in Sources */,
+				CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDFFF0211C7F61C100F664C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFFF0221C7F61C100F664C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFFF0271C7F61C100F664C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDFFF02A1C7F61C100F664C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDFFF02B1C7F61C100F664C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFFF02D1C7F61C100F664C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = shakeel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDFFF02E1C7F61C100F664C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = shakeel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFFF0151C7F61C100F664C9 /* Build configuration list for PBXProject "shakeel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFFF02A1C7F61C100F664C9 /* Debug */,
+				CDFFF02B1C7F61C100F664C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFFF02C1C7F61C100F664C9 /* Build configuration list for PBXNativeTarget "shakeel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFFF02D1C7F61C100F664C9 /* Debug */,
+				CDFFF02E1C7F61C100F664C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFFF0121C7F61C100F664C9 /* Project object */;
+}
