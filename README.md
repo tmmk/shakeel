@@ -1,8 +1,6 @@
 # Group Project - *TBD*
 
 **TBD** is [ short description ]
-Required (core) user stories for your app in a bulleted list
-Optional (nice to have) user stories listed separately
 
 Time spent: **X** hours spent in total
 
