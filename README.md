@@ -1,6 +1,7 @@
-# Group Project - *TBD*
+# Group Project - *fixr*
 
-**TBD** is [ short description ]
+**fixr** is an app that allows you to mail-in your devices to be serviced by [Shakeel the Repair Guy](www.yelp.com/biz/shakeel-the-iphone-repair-guy-south-san-francisco-2), complete with a price quote, printable shipping label, and user account for device registration and order tracking.
+
 
 Time spent: **X** hours spent in total
 
@@ -8,23 +9,24 @@ Time spent: **X** hours spent in total
 
 The following **required** (core) user stories have been completed:
 
-- [ ] User can click on the button to fix the current device 
-- [ ] User can select from a list of devices to be fixed
-- [ ] User can create an account
-- [ ] User can see nearby drop off USPS locations from the map
-- [ ] API to decode device details from serial/IMEI number
-- [ ] User can enter their credit card details to make a payment (implement using stripe).
-- [ ] User can select from other services: unlocking their phone by entering their IMEI number.
-- [ ] User can generate a shipping label from the app
-- [ ] User can print the shipping label from their device over WIFI.
+- [ ] User can specify a device to be serviced.
+- [ ] User can see nearby drop off USPS locations from the map.
+- [ ] API to decode device details from Serial/IMEI number.
+- [ ] User can enter payment details.
+- [ ] User can generate a shipping label from the app.
+- [ ] User can select among available printing options for shipping label.
+- [ ] User can create an account.
+- [ ] User's account can remember their devices
 
 
 The following **optional** user stories have been implemented:
 
 - [ ] User can take a photo of their device to submit through the application.
-- [ ] User can purchase add-ons for their order (limited to screen protector for now).
-- [ ] User can pay using Apple Pay, PayPal
-- [ ] Display a carousel of Yelp reviews on the loading screen
+- [ ] User can purchase add-ons for their order.
+- [ ] User can pay using Apple Pay, PayPal, et. al.
+- [ ] User can see latest Yelp reviews on the home screen
+- [ ] User can see Shakeel's Instagram feed on the home screen
+- [ ] User can select from other services: unlocking their phone, etc.
 
 
 The following **additional** features are implemented:
