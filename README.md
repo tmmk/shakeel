@@ -8,15 +8,24 @@ Time spent: **X** hours spent in total
 
 The following **required** (core) user stories have been completed:
 
-- [ ] User Story 1
-- [ ] User Story 2
-- [ ] User Story 3
+- [ ] User can click on the button to fix the current device 
+- [ ] User can select from a list of devices to be fixed
+- [ ] User can create an account
+- [ ] User can see nearby drop off USPS locations from the map
+- [ ] API to decode device details from serial/IMEI number
+- [ ] User can enter their credit card details to make a payment (implement using stripe).
+- [ ] User can select from other services: unlocking their phone by entering their IMEI number.
+- [ ] User can generate a shipping label from the app
+- [ ] User can print the shipping label from their device over WIFI.
+
 
 The following **optional** user stories have been implemented:
 
-- [ ] Optional User Story 1
-- [ ] Optional User Story 2
-- [ ] Optional User Story 3
+- [ ] User can take a photo of their device to submit through the application.
+- [ ] User can purchase add-ons for their order (limited to screen protector for now).
+- [ ] User can pay using Apple Pay, PayPal
+- [ ] Display a carousel of Yelp reviews on the loading screen
+
 
 The following **additional** features are implemented:
 
