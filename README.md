@@ -1,6 +1,6 @@
 # Group Project - *fixr*
 
-**fixr** is an app that allows you to mail-in your devices to be serviced by [Shakeel the Repair Guy](www.yelp.com/biz/shakeel-the-iphone-repair-guy-south-san-francisco-2), complete with a price quote, printable shipping label, and user account for device registration and order tracking.
+**fixr** is an app that allows you to mail-in your devices to be serviced by [Shakeel the Repair Guy](http://www.yelp.com/biz/shakeel-the-iphone-repair-guy-south-san-francisco-2), complete with a price quote, printable shipping label, and user account for device registration and order tracking.
 
 
 Time spent: **X** hours spent in total
