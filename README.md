@@ -36,6 +36,9 @@ The following **additional** features are implemented:
 ## Wireframes
 Available through [InvisionApp](https://invis.io/S865BT1JX)
 
+## Data Models
+Available on [Google Docs: Data Model](http://tinyurl.com/tmmk-data-model)
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
