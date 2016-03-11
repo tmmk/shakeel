@@ -37,7 +37,7 @@ The following **additional** features are implemented:
 Available through [InvisionApp](https://invis.io/S865BT1JX)
 
 ## Data Models
-Available on [Google Docs: Data Model](http://tinyurl.com/tmmk-data-model)
+Available in [Data Schema](./ds.md)
 
 ## Video Walkthrough 
 
