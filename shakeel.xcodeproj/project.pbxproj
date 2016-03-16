@@ -7,17 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */; };
+		CDCE4C961C969050004A0E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C951C969050004A0E07 /* User.swift */; };
+		CDCE4C981C969066004A0E07 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C971C969066004A0E07 /* Device.swift */; };
+		CDCE4C9A1C96907C004A0E07 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C991C96907C004A0E07 /* Order.swift */; };
+		CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C9B1C96908C004A0E07 /* Shipment.swift */; };
+		CDCE4CA61C98DECB004A0E07 /* MyDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */; };
+		CDCE4CA81C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */; };
+		CDCE4CAA1C98E401004A0E07 /* EnterSerialNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CA91C98E401004A0E07 /* EnterSerialNumberViewController.swift */; };
+		CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */; };
+		CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */; };
+		CDCE4CB01C98E5A8004A0E07 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */; };
+		CDCE4CB41C98E617004A0E07 /* OrderThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */; };
+		CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */; };
+		CDCE4CB81C98EFFE004A0E07 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */; };
 		CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */; };
-		CDFFF0201C7F61C100F664C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFF01F1C7F61C100F664C9 /* ViewController.swift */; };
 		CDFFF0231C7F61C100F664C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0211C7F61C100F664C9 /* Main.storyboard */; };
 		CDFFF0251C7F61C100F664C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0241C7F61C100F664C9 /* Assets.xcassets */; };
 		CDFFF0281C7F61C100F664C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CDCE4C951C969050004A0E07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CDCE4C971C969066004A0E07 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		CDCE4C991C96907C004A0E07 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CDCE4C9B1C96908C004A0E07 /* Shipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
+		CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDevicesViewController.swift; sourceTree = "<group>"; };
+		CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAnotherDeviceViewController.swift; sourceTree = "<group>"; };
+		CDCE4CA91C98E401004A0E07 /* EnterSerialNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterSerialNumberViewController.swift; sourceTree = "<group>"; };
+		CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteUpViewController.swift; sourceTree = "<group>"; };
+		CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShippingViewController.swift; sourceTree = "<group>"; };
+		CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderThreadViewController.swift; sourceTree = "<group>"; };
+		CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		CDFFF01A1C7F61C100F664C9 /* shakeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDFFF01F1C7F61C100F664C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDFFF0221C7F61C100F664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDFFF0241C7F61C100F664C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDFFF0271C7F61C100F664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +61,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDCE4C911C965173004A0E07 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
+				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
+				CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */,
+				CDCE4CA91C98E401004A0E07 /* EnterSerialNumberViewController.swift */,
+				CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */,
+				CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */,
+				CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */,
+				CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */,
+				CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */,
+				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CDCE4C941C968F5C004A0E07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE4C951C969050004A0E07 /* User.swift */,
+				CDCE4C971C969066004A0E07 /* Device.swift */,
+				CDCE4C991C96907C004A0E07 /* Order.swift */,
+				CDCE4C9B1C96908C004A0E07 /* Shipment.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CDCE4CB91C990572004A0E07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CDCE4CBA1C990622004A0E07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFF0211C7F61C100F664C9 /* Main.storyboard */,
+				CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		CDFFF0111C7F61C100F664C9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +124,12 @@
 		CDFFF01C1C7F61C100F664C9 /* shakeel */ = {
 			isa = PBXGroup;
 			children = (
+				CDCE4C911C965173004A0E07 /* View Controllers */,
+				CDCE4CB91C990572004A0E07 /* Views */,
+				CDCE4C941C968F5C004A0E07 /* Models */,
+				CDCE4CBA1C990622004A0E07 /* Storyboards */,
 				CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */,
-				CDFFF01F1C7F61C100F664C9 /* ViewController.swift */,
-				CDFFF0211C7F61C100F664C9 /* Main.storyboard */,
 				CDFFF0241C7F61C100F664C9 /* Assets.xcassets */,
-				CDFFF0261C7F61C100F664C9 /* LaunchScreen.storyboard */,
 				CDFFF0291C7F61C100F664C9 /* Info.plist */,
 			);
 			path = shakeel;
@@ -136,8 +207,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFFF0201C7F61C100F664C9 /* ViewController.swift in Sources */,
+				CDCE4C961C969050004A0E07 /* User.swift in Sources */,
+				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
+				CDCE4CB41C98E617004A0E07 /* OrderThreadViewController.swift in Sources */,
+				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
+				CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */,
 				CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */,
+				CDCE4CA61C98DECB004A0E07 /* MyDevicesViewController.swift in Sources */,
+				CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */,
+				CDCE4CAA1C98E401004A0E07 /* EnterSerialNumberViewController.swift in Sources */,
+				CDCE4CA81C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift in Sources */,
+				CDCE4CB01C98E5A8004A0E07 /* PaymentViewController.swift in Sources */,
+				CDCE4C981C969066004A0E07 /* Device.swift in Sources */,
+				CDCE4C9A1C96907C004A0E07 /* Order.swift in Sources */,
+				CDCE4CB81C98EFFE004A0E07 /* OrdersViewController.swift in Sources */,
+				CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +369,7 @@
 				CDFFF02E1C7F61C100F664C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
