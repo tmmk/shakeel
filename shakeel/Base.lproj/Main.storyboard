@@ -329,6 +329,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" id="NO4-m6-o0e"/>
+                    <navigationItem key="navigationItem" id="QAA-Z9-shX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNs-yi-2XA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -388,6 +389,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="My Payments Methods"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hzl-Rr-xBf">
+                                <rect key="frame" x="20" y="274" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Orders"/>
+                                <connections>
+                                    <segue destination="FX1-4A-o6I" kind="push" id="bPQ-Ls-JmJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -399,4 +408,7 @@
             <point key="canvasLocation" x="826" y="1140"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bPQ-Ls-JmJ"/>
+    </inferredMetricsTieBreakers>
 </document>
