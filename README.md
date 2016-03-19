@@ -9,10 +9,10 @@ Time spent: **X** hours spent in total
 
 The following **required** (core) user stories have been completed:
 
-- [ ] User can specify a device to be serviced.
+- [x] User can specify a device to be serviced.
 - [ ] User can see nearby drop off USPS locations from the map.
 - [ ] API to decode device details from Serial/IMEI number.
-- [ ] User can enter payment details.
+- [x] User can enter payment details.
 - [ ] User can generate a shipping label from the app.
 - [ ] User can select among available printing options for shipping label.
 - [ ] User can create an account.
@@ -43,7 +43,7 @@ Available in [Data Schema](./ds.md)
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/v6ktj9R.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
