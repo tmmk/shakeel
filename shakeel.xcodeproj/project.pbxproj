@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC34E11C9D23FB00412394 /* MessageCell.swift */; };
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
+		CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */; };
+		CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F71C9DFD520082EF9C /* OrderCell.swift */; };
 		CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */; };
 		CDCE4C961C969050004A0E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C951C969050004A0E07 /* User.swift */; };
 		CDCE4C981C969066004A0E07 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C971C969066004A0E07 /* Device.swift */; };
@@ -20,9 +22,8 @@
 		CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */; };
 		CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */; };
 		CDCE4CB01C98E5A8004A0E07 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */; };
-		CDCE4CB41C98E617004A0E07 /* OrderThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */; };
 		CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */; };
-		CDCE4CB81C98EFFE004A0E07 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */; };
+		CDCE4CB81C98EFFE004A0E07 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */; };
 		CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */; };
 		CDFFF0231C7F61C100F664C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0211C7F61C100F664C9 /* Main.storyboard */; };
 		CDFFF0251C7F61C100F664C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFFF0241C7F61C100F664C9 /* Assets.xcassets */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		CD1606F71C9DFD520082EF9C /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDCE4C951C969050004A0E07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CDCE4C971C969066004A0E07 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -43,9 +46,8 @@
 		CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteUpViewController.swift; sourceTree = "<group>"; };
 		CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseShippingViewController.swift; sourceTree = "<group>"; };
 		CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderThreadViewController.swift; sourceTree = "<group>"; };
 		CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		CDFFF01A1C7F61C100F664C9 /* shakeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDFFF0221C7F61C100F664C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
 				65F5FB951C9D1083001AD5DA /* TabBarController.swift */,
 				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
 				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
@@ -76,8 +79,7 @@
 				CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */,
 				CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */,
 				CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */,
-				CDCE4CB31C98E617004A0E07 /* OrderThreadViewController.swift */,
-				CDCE4CB71C98EFFE004A0E07 /* OrdersViewController.swift */,
+				CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */,
 				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
@@ -97,6 +99,7 @@
 		CDCE4CB91C990572004A0E07 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD1606F71C9DFD520082EF9C /* OrderCell.swift */,
 				65CC34E11C9D23FB00412394 /* MessageCell.swift */,
 			);
 			name = Views;
@@ -216,8 +219,8 @@
 				CDCE4C961C969050004A0E07 /* User.swift in Sources */,
 				65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */,
 				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
-				CDCE4CB41C98E617004A0E07 /* OrderThreadViewController.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
+				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,
 				CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */,
 				CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */,
 				CDCE4CA61C98DECB004A0E07 /* MyDevicesViewController.swift in Sources */,
@@ -228,7 +231,8 @@
 				CDCE4C981C969066004A0E07 /* Device.swift in Sources */,
 				65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */,
 				CDCE4C9A1C96907C004A0E07 /* Order.swift in Sources */,
-				CDCE4CB81C98EFFE004A0E07 /* OrdersViewController.swift in Sources */,
+				CDCE4CB81C98EFFE004A0E07 /* OrderViewController.swift in Sources */,
+				CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */,
 				CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
