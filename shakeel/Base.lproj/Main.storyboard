@@ -63,14 +63,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Fix Another Device?"/>
                                 <connections>
-                                    <segue destination="vAA-BB-acH" kind="push" id="AHZ-vu-EGd"/>
+                                    <segue destination="vAA-BB-acH" kind="push" identifier="toAnother" id="AHZ-vu-EGd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YeX-rf-ap3">
                                 <rect key="frame" x="65" y="135" width="73" height="64"/>
                                 <state key="normal" title="Fix this Device?"/>
                                 <connections>
-                                    <segue destination="lAq-rr-438" kind="push" id="meF-XQ-TMU"/>
+                                    <segue destination="lAq-rr-438" kind="push" identifier="toThis" id="meF-XQ-TMU"/>
                                 </connections>
                             </button>
                         </subviews>
