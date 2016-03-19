@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC34E11C9D23FB00412394 /* MessageCell.swift */; };
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
 		CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */; };
 		CDCE4C961C969050004A0E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C951C969050004A0E07 /* User.swift */; };
@@ -29,7 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = shakeel/TabBarController.swift; sourceTree = "<group>"; };
+		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDCE4C951C969050004A0E07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CDCE4C971C969066004A0E07 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				65F5FB951C9D1083001AD5DA /* TabBarController.swift */,
 				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
 				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
 				CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */,
@@ -94,6 +97,7 @@
 		CDCE4CB91C990572004A0E07 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65CC34E11C9D23FB00412394 /* MessageCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -110,7 +114,6 @@
 		CDFFF0111C7F61C100F664C9 = {
 			isa = PBXGroup;
 			children = (
-				65F5FB951C9D1083001AD5DA /* TabBarController.swift */,
 				CDFFF01C1C7F61C100F664C9 /* shakeel */,
 				CDFFF01B1C7F61C100F664C9 /* Products */,
 			);
@@ -223,6 +226,7 @@
 				CDCE4CA81C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift in Sources */,
 				CDCE4CB01C98E5A8004A0E07 /* PaymentViewController.swift in Sources */,
 				CDCE4C981C969066004A0E07 /* Device.swift in Sources */,
+				65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */,
 				CDCE4C9A1C96907C004A0E07 /* Order.swift in Sources */,
 				CDCE4CB81C98EFFE004A0E07 /* OrdersViewController.swift in Sources */,
 				CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */,
