@@ -21,6 +21,9 @@ class PaymentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onSubmitButton(sender: AnyObject) {
+        tabBarController?.selectedIndex = 0
+    }
 
     /*
     // MARK: - Navigation
