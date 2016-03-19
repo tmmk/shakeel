@@ -11,6 +11,8 @@
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
 		CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */; };
 		CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F71C9DFD520082EF9C /* OrderCell.swift */; };
+		CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F91C9E026E0082EF9C /* Thread.swift */; };
+		CD1606FC1C9E031C0082EF9C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606FB1C9E031C0082EF9C /* Message.swift */; };
 		CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */; };
 		CDCE4C961C969050004A0E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C951C969050004A0E07 /* User.swift */; };
 		CDCE4C981C969066004A0E07 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C971C969066004A0E07 /* Device.swift */; };
@@ -35,6 +37,8 @@
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		CD1606F71C9DFD520082EF9C /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		CD1606F91C9E026E0082EF9C /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		CD1606FB1C9E031C0082EF9C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDCE4C951C969050004A0E07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CDCE4C971C969066004A0E07 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -88,10 +92,12 @@
 		CDCE4C941C968F5C004A0E07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CD1606FB1C9E031C0082EF9C /* Message.swift */,
 				CDCE4C951C969050004A0E07 /* User.swift */,
 				CDCE4C971C969066004A0E07 /* Device.swift */,
 				CDCE4C991C96907C004A0E07 /* Order.swift */,
 				CDCE4C9B1C96908C004A0E07 /* Shipment.swift */,
+				CD1606F91C9E026E0082EF9C /* Thread.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				CDCE4C961C969050004A0E07 /* User.swift in Sources */,
 				65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */,
 				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
+				CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
 				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,
 				CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */,
@@ -232,6 +239,7 @@
 				65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */,
 				CDCE4C9A1C96907C004A0E07 /* Order.swift in Sources */,
 				CDCE4CB81C98EFFE004A0E07 /* OrderViewController.swift in Sources */,
+				CD1606FC1C9E031C0082EF9C /* Message.swift in Sources */,
 				CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */,
 				CDCE4CAC1C98E46B004A0E07 /* WriteUpViewController.swift in Sources */,
 			);

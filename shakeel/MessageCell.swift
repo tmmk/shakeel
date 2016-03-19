@@ -14,6 +14,8 @@ class MessageCell: UITableViewCell {
     @IBOutlet weak var messageTextLabel: UILabel!
     @IBOutlet weak var messageImageView: UIImageView!
     
+    var message: Message?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -17,6 +17,7 @@ class Order: NSObject {
     var cause: ProblemCause?
     var writeup: String?
     var status: OrderStatus?
+    var chat: Thread?
     
     enum ProblemCause {
         case Accident

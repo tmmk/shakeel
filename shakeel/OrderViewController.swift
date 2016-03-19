@@ -15,6 +15,8 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var shadowEffectView: UIView!
     @IBOutlet weak var shadowEffectView2: UIView!
     
+    var order: Order?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,21 +38,21 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let gradientLayer = CAGradientLayer();
-        gradientLayer.frame = shadowEffectView.bounds;
-        let topColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor as CGColorRef;
-        let bottomColor = UIColor(white: 0, alpha: 0.0).CGColor as CGColorRef;
-        gradientLayer.colors = [topColor, bottomColor];
-        gradientLayer.locations = [0.0, 1.0];
-        shadowEffectView.layer.addSublayer(gradientLayer);
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = shadowEffectView.bounds
+        let topColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor as CGColorRef
+        let bottomColor = UIColor(white: 0, alpha: 0.0).CGColor as CGColorRef
+        gradientLayer.colors = [topColor, bottomColor]
+        gradientLayer.locations = [0.0, 1.0]
+        shadowEffectView.layer.addSublayer(gradientLayer)
         
-        let gradientLayer2 = CAGradientLayer();
-        gradientLayer2.frame = shadowEffectView2.bounds;
-        let bottomColor2 = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor as CGColorRef;
-        let topColor2 = UIColor(white: 0, alpha: 0.0).CGColor as CGColorRef;
-        gradientLayer2.colors = [topColor2, bottomColor2];
-        gradientLayer2.locations = [0.0, 1.0];
-        shadowEffectView2.layer.addSublayer(gradientLayer2);
+        let gradientLayer2 = CAGradientLayer()
+        gradientLayer2.frame = shadowEffectView2.bounds
+        let bottomColor2 = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor as CGColorRef
+        let topColor2 = UIColor(white: 0, alpha: 0.0).CGColor as CGColorRef
+        gradientLayer2.colors = [topColor2, bottomColor2]
+        gradientLayer2.locations = [0.0, 1.0]
+        shadowEffectView2.layer.addSublayer(gradientLayer2)
 
     }
     
@@ -63,7 +65,7 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
-        cell.messageTextLabel.hidden = false;
+        cell.messageTextLabel.hidden = false
         cell.messageImageView.hidden = true
         cell.backgroundSuperview.backgroundColor = UIColor(red: 12/255.0, green: 210/255.0, blue: 27/255.0, alpha: 1)
         if(indexPath.row == 0) {
