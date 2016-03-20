@@ -12,6 +12,10 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var orderNumLabel: UILabel!
+    @IBOutlet weak var deviceNameLabel: UILabel!
+    
+    
     @IBOutlet weak var shadowEffectView: UIView!
     @IBOutlet weak var shadowEffectView2: UIView!
     
