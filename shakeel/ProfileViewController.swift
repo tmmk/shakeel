@@ -20,8 +20,11 @@ class ProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    @IBAction func onOrdersButton(sender: AnyObject) {
+        tabBarController?.selectedIndex = 0
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aSe-wt-pmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aSe-wt-pmj">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -691,6 +691,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grx-n1-Haa">
                                 <rect key="frame" x="20" y="274" width="72" height="30"/>
                                 <state key="normal" title="My Orders"/>
+                                <connections>
+                                    <action selector="onOrdersButton:" destination="h92-A7-Vg0" eventType="touchUpInside" id="NWe-rP-SfK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr9-9t-YFV">
                                 <rect key="frame" x="20" y="324" width="157" height="30"/>
@@ -700,7 +703,7 @@
                                 <rect key="frame" x="20" y="274" width="72" height="30"/>
                                 <state key="normal" title="My Orders"/>
                                 <connections>
-                                    <segue destination="shX-QT-1vl" kind="push" id="bPQ-Ls-JmJ"/>
+                                    <action selector="onOrdersButton:" destination="h92-A7-Vg0" eventType="touchUpInside" id="ePs-fL-kkb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -718,7 +721,4 @@
         <image name="Sample-Shipping-Label" width="224" height="314"/>
         <image name="iPhone-Issues" width="461" height="551"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="L3Y-cJ-Y8T"/>
-    </inferredMetricsTieBreakers>
 </document>
