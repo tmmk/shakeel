@@ -74,7 +74,6 @@
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
 				65F5FB951C9D1083001AD5DA /* TabBarController.swift */,
 				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
 				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
@@ -83,6 +82,7 @@
 				CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */,
 				CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */,
 				CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */,
+				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
 				CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */,
 				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
 			);
@@ -92,12 +92,12 @@
 		CDCE4C941C968F5C004A0E07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CD1606FB1C9E031C0082EF9C /* Message.swift */,
 				CDCE4C951C969050004A0E07 /* User.swift */,
 				CDCE4C971C969066004A0E07 /* Device.swift */,
 				CDCE4C991C96907C004A0E07 /* Order.swift */,
 				CDCE4C9B1C96908C004A0E07 /* Shipment.swift */,
 				CD1606F91C9E026E0082EF9C /* Thread.swift */,
+				CD1606FB1C9E031C0082EF9C /* Message.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";

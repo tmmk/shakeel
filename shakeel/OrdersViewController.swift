@@ -27,8 +27,7 @@ class OrdersViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("OrderCell") as! OrderCell;
-        print("asd");
+        let cell = tableView.dequeueReusableCellWithIdentifier("OrderCell") as! OrderCell
         return cell
     }
     
