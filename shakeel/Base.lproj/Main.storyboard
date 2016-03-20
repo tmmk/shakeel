@@ -693,10 +693,10 @@
             </objects>
             <point key="canvasLocation" x="-132" y="1116"/>
         </scene>
-        <!--Orders-->
+        <!--Orders Navigation Controller-->
         <scene sceneID="Iq5-7B-3uG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="shX-QT-1vl" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OrdersNavigationController" title="Orders Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="shX-QT-1vl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Orders" id="NO4-m6-o0e"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Obm-Ir-J4F"/>
