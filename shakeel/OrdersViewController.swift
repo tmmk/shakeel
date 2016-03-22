@@ -12,6 +12,8 @@ class OrdersViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
+    var orders: [Order]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

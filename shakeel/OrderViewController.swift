@@ -12,10 +12,19 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var orderNumLabel: UILabel!
+    @IBOutlet weak var deviceNameLabel: UILabel!
+    @IBOutlet weak var problemDescriptionLabel: UILabel!
+    @IBOutlet weak var shippingETAlabel: UILabel!
+    
     @IBOutlet weak var shadowEffectView: UIView!
     @IBOutlet weak var shadowEffectView2: UIView!
     
     var order: Order?
+    var messages: [Message]?
+    
+    @IBOutlet weak var userMessageTextField: UITextField!
+    @IBOutlet weak var userMessageSendButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,11 +91,14 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if(indexPath.row == 3) {
             cell.messageTextLabel.text = "Take it to your nearest USPS and give them your phone. They'll handle the rest :)"
         }
+        
+        print("row \(indexPath.row)")
+        
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 10
     }
 
     /*

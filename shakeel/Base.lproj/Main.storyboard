@@ -445,26 +445,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qdm-h4-lr7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qdm-h4-lr7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="80" id="9Wj-yM-Hba" customClass="OrderCell" customModule="shakeel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="95" id="9Wj-yM-Hba" customClass="OrderCell" customModule="shakeel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Wj-yM-Hba" id="pFh-ap-qqc">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order #123356" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-L7-7mb">
-                                                    <rect key="frame" x="14" y="11" width="118" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="8" width="99" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Device: iPhone 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCC-65-dqt">
+                                                    <rect key="frame" x="8" y="28" width="109" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description: Cracked Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbY-Ao-4KM">
+                                                    <rect key="frame" x="8" y="48" width="185" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ETA: March 22-22, 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhw-xg-Ahy">
+                                                    <rect key="frame" x="8" y="68" width="157" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="deviceNameLabel" destination="qCC-65-dqt" id="Aj9-wg-oDR"/>
+                                            <outlet property="orderNumLabel" destination="Tgf-L7-7mb" id="T0E-Zs-VlT"/>
+                                            <outlet property="problemDescriptionLabel" destination="BbY-Ao-4KM" id="hvt-Eb-6Wj"/>
+                                            <outlet property="shippingETAlabel" destination="xhw-xg-Ahy" id="mXu-gl-Cyf"/>
                                             <segue destination="FX1-4A-o6I" kind="push" id="Xgn-iy-zHn"/>
                                         </connections>
                                     </tableViewCell>
@@ -638,9 +660,15 @@
                     <navigationItem key="navigationItem" id="QAA-Z9-shX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="deviceNameLabel" destination="E60-fj-MOX" id="LIX-CQ-qhk"/>
+                        <outlet property="orderNumLabel" destination="dXy-44-Vg3" id="gV6-t4-p7H"/>
+                        <outlet property="problemDescriptionLabel" destination="oBC-4M-2QZ" id="vTQ-b6-kFz"/>
                         <outlet property="shadowEffectView" destination="rXw-9a-ASN" id="7dl-VY-hew"/>
                         <outlet property="shadowEffectView2" destination="0hC-rm-88s" id="07B-gX-v9L"/>
+                        <outlet property="shippingETAlabel" destination="Mhi-Gb-ouP" id="2hT-oQ-PdM"/>
                         <outlet property="tableView" destination="0rS-3X-kME" id="KsW-xO-09s"/>
+                        <outlet property="userMessageSendButton" destination="ud8-Ou-04O" id="mGx-AX-7l4"/>
+                        <outlet property="userMessageTextField" destination="ls2-3F-xfL" id="vtZ-LU-dAs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNs-yi-2XA" userLabel="First Responder" sceneMemberID="firstResponder"/>
