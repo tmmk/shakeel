@@ -41,6 +41,9 @@ class User: NSObject {
     }
     
     func update(key: String, value: String) {
+        if(key == "username") {
+            fatalError("user api: usernames are permanent. modifications to usernames are not permitted.")
+        }
         User.api("id=\(id),\(key)=\(value)", endpoint: "/users/modify/", completion: nil);
     }
     
@@ -74,6 +77,12 @@ class User: NSObject {
     
     class func getUserByUsernameWithCompletion(username: String, completion: ((User?) -> ())?) {
         User.api("username=\(username)", endpoint: "/users/get/", completion: completion)
+    }
+    
+    class func getURLFromImage(image: UIImage) {
+        // upload and get url string
+        
+        return // url string
     }
     
     class func api(query: String, endpoint: String, completion: ((User?) -> ())?){
