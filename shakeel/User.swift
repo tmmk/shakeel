@@ -9,9 +9,10 @@
 import UIKit
 
 // usage:
-//  creating a new user: User(username: "", password: "", display_name: "")
+//  creating a new user: User.create(username: "", password: "", display_name: "")
 //  modifying a user: existinguser.update("profile_image_url", "");
 //  getting a user by ID: User.getUserByIDWithCompletion(id: "", completion: (user: User?) -> () in { print(user) });
+//  getting a user by username: User.getUserByUsernameWithCompletion(username: "", completion: (user: User?) -> () in { print(user) });
 
 class User: NSObject {
     var id: String? {
@@ -43,31 +44,36 @@ class User: NSObject {
         User.api("id=\(id),\(key)=\(value)", endpoint: "/users/modify/", completion: nil);
     }
     
-    init(username: String, password: String, display_name: String) {
-        super.init();
-        self.username = username;
-        self.password = password;
-        self.display_name = display_name;
+    class func create(username: String, password: String, display_name: String) {
+        let user = User();
+        user.username = username;
+        user.password = password;
+        user.display_name = display_name;
         User.api("username=\(username),password=\(password),display_name=\(display_name)", endpoint: "/users/create/") { (response: AnyObject?) -> () in
             let responseDictionary = response as! NSDictionary;
-            self.id = responseDictionary["id"] as! String;
+            user.id = responseDictionary["id"] as! String;
         }
     }
     
-    init?(dictionary: NSDictionary?) {
-        super.init();
+    class func instantiateWithDictionary(dictionary: NSDictionary?) -> User? {
         if(dictionary == nil) {
             return nil
         }
-        id = dictionary!["id"] as? String;
-        username = dictionary!["username"] as? String;
-        password = dictionary!["password"] as? String;
-        display_name = dictionary!["display_name"] as? String;
-        profile_image_url = dictionary!["profile_image_url"] as? String;
+        let user = User();
+        user.id = dictionary!["id"] as? String;
+        user.username = dictionary!["username"] as? String;
+        user.password = dictionary!["password"] as? String;
+        user.display_name = dictionary!["display_name"] as? String;
+        user.profile_image_url = dictionary!["profile_image_url"] as? String;
+        return user;
     }
 
     class func getUserByIDWithCompletion(id: String, completion: ((User?) -> ())?) {
         User.api("id=\(id)", endpoint: "/users/get/", completion: completion)
+    }
+    
+    class func getUserByUsernameWithCompletion(username: String, completion: ((User?) -> ())?) {
+        User.api("username=\(username)", endpoint: "/users/get/", completion: completion)
     }
     
     class func api(query: String, endpoint: String, completion: ((User?) -> ())?){
@@ -93,7 +99,7 @@ class User: NSObject {
             do {
                 let dataObject = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments);
                 if(completion != nil) {
-                    completion!(User(dictionary: dataObject as? NSDictionary));
+                    completion!(User.instantiateWithDictionary(dataObject as? NSDictionary));
                 }
             } catch(_) {
                 
