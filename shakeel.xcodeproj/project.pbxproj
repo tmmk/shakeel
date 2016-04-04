@@ -15,6 +15,9 @@
 		CD1606FC1C9E031C0082EF9C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606FB1C9E031C0082EF9C /* Message.swift */; };
 		CD6C06021CB1F86D007392EB /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C06011CB1F86D007392EB /* DevicesViewController.swift */; };
 		CD6C06041CB1FFC8007392EB /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C06031CB1FFC8007392EB /* DeviceCell.swift */; };
+		CD6C06061CB23C1E007392EB /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C06051CB23C1E007392EB /* EditProfileViewController.swift */; };
+		CD6C06081CB245F3007392EB /* AddAnotherDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */; };
+		CD6C060A1CB26FB0007392EB /* DeviceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C06091CB26FB0007392EB /* DeviceDetailsViewController.swift */; };
 		CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */; };
 		CDCE4C961C969050004A0E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C951C969050004A0E07 /* User.swift */; };
 		CDCE4C981C969066004A0E07 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE4C971C969066004A0E07 /* Device.swift */; };
@@ -43,6 +46,9 @@
 		CD1606FB1C9E031C0082EF9C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CD6C06011CB1F86D007392EB /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		CD6C06031CB1FFC8007392EB /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		CD6C06051CB23C1E007392EB /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnotherDeviceViewController.swift; sourceTree = "<group>"; };
+		CD6C06091CB26FB0007392EB /* DeviceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewController.swift; sourceTree = "<group>"; };
 		CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDCE4C951C969050004A0E07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CDCE4C971C969066004A0E07 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -89,7 +95,10 @@
 				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
 				CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */,
 				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
+				CD6C06051CB23C1E007392EB /* EditProfileViewController.swift */,
 				CD6C06011CB1F86D007392EB /* DevicesViewController.swift */,
+				CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */,
+				CD6C06091CB26FB0007392EB /* DeviceDetailsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -232,12 +241,15 @@
 				CD6C06021CB1F86D007392EB /* DevicesViewController.swift in Sources */,
 				65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */,
 				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
+				CD6C060A1CB26FB0007392EB /* DeviceDetailsViewController.swift in Sources */,
 				CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
 				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,
 				CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */,
+				CD6C06081CB245F3007392EB /* AddAnotherDeviceViewController.swift in Sources */,
 				CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */,
 				CD6C06041CB1FFC8007392EB /* DeviceCell.swift in Sources */,
+				CD6C06061CB23C1E007392EB /* EditProfileViewController.swift in Sources */,
 				CDCE4CA61C98DECB004A0E07 /* MyDevicesViewController.swift in Sources */,
 				CDCE4C931C9651A0004A0E07 /* HomeViewController.swift in Sources */,
 				CDCE4CAA1C98E401004A0E07 /* EnterSerialNumberViewController.swift in Sources */,
