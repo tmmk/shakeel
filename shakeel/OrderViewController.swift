@@ -101,6 +101,9 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 10
     }
 
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 
