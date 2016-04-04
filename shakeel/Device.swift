@@ -10,6 +10,7 @@ import UIKit
 
 class Device: NSObject {
     
+    var nickname: String?
     var manufacturer: String?
     var model: String?
     var serial_number: String?
