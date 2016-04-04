@@ -24,6 +24,10 @@ class PaymentViewController: UIViewController {
     @IBAction func onSubmitButton(sender: AnyObject) {
         tabBarController?.selectedIndex = 0
     }
+    
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation

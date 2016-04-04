@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aSe-wt-pmj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aSe-wt-pmj">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -213,11 +213,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PoI-zs-xTs" appends="YES" id="JXc-eS-6rU"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="g4f-ZU-a3d"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPY-Dm-iLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PoI-zs-xTs">
+                    <connections>
+                        <action selector="onTap:" destination="lAq-rr-438" id="Yfi-F4-onf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1662" y="366"/>
         </scene>
@@ -294,11 +303,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eDw-Cd-Egy" appends="YES" id="Ejs-nf-Mkj"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="yvG-y8-fXH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67f-3P-U0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eDw-Cd-Egy">
+                    <connections>
+                        <action selector="onTap:" destination="Z3e-dU-5nB" id="7gR-28-UAR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2444" y="366"/>
         </scene>
@@ -405,11 +423,20 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gRT-zv-FXw" appends="YES" id="UyO-WQ-orO"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="RiH-vt-A6J"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYK-hx-q7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gRT-zv-FXw">
+                    <connections>
+                        <action selector="onTap:" destination="nA2-Zh-Let" id="di1-TU-80s"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3353" y="366"/>
         </scene>
@@ -637,6 +664,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0rS-3X-kME" firstAttribute="leading" secondItem="rDa-c5-H9w" secondAttribute="leadingMargin" constant="-20" id="15M-GZ-h92"/>
                             <constraint firstItem="0rS-3X-kME" firstAttribute="top" secondItem="rXw-9a-ASN" secondAttribute="top" id="3aG-AQ-4Vd"/>
@@ -656,6 +684,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="0rS-3X-kME" secondAttribute="trailing" constant="-20" id="kho-Zj-jNx"/>
                             <constraint firstItem="0hC-rm-88s" firstAttribute="width" secondItem="rDa-c5-H9w" secondAttribute="width" id="ut5-Rp-CLL"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6nH-x4-KRg" appends="YES" id="dDm-12-J3R"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="QAA-Z9-shX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -672,6 +703,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNs-yi-2XA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6nH-x4-KRg">
+                    <connections>
+                        <action selector="onTap:" destination="FX1-4A-o6I" id="91n-hB-HMt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="743" y="1866"/>
         </scene>
