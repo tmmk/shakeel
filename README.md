@@ -11,7 +11,7 @@ The following **required** (core) user stories have been completed:
 
 - [x] User can specify a device to be serviced.
 - [ ] User can see nearby drop off USPS locations from the map.
-- [ ] API to decode device details from Serial/IMEI number.
+- [ ] API to decode device details from IMEI number.
 - [x] User can enter payment details.
 - [ ] User can generate a shipping label from the app.
 - [ ] User can select among available printing options for shipping label.
