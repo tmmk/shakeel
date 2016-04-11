@@ -10,6 +10,15 @@ import UIKit
 
 class Shakeel: NSObject {
     
+    static var UUID: String {
+        var uuid = Keychain.get("Shakeel_UUID") as? String;
+        if(uuid == nil) {
+            uuid = NSUUID().UUIDString;
+            Keychain.set("Shakeel_UUID", value: uuid!);
+        }
+        return uuid!;
+    }
+    
     class func api(parameters: NSDictionary, endpoint: String, completion: ((NSDictionary?) -> ())?){
         let url: NSURL = NSURL(string: "https://api.sfrepairguy.com/" + endpoint)!
         let session = NSURLSession.sharedSession()
@@ -17,7 +26,7 @@ class Shakeel: NSObject {
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        request.addValue("tejen", forHTTPHeaderField: "X-Auth-Token")
+        request.addValue(Shakeel.UUID, forHTTPHeaderField: "X-Auth-Token")
         
         request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(parameters, options: []);
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -39,7 +48,7 @@ class Shakeel: NSObject {
                 let dataObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as? NSDictionary
                 if(dataObject?.valueForKey("error") != nil) {
                     print("/#/#/#/#/#/#/#/#/#/#/");
-                    print(" API ERROR OCCURRED:");
+                    print(" API ERROR OCCURRED:\n");
                     print(dataObject!["error"]!);
                     print("\n");
                     print("/#/#/#/#/#/#/#/#/#/#/");
