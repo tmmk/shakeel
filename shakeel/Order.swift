@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Order: NSObject {
+class Order: Shakeel {
     
     var id: Int?
     var device: Device?

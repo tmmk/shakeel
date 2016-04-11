@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6547A5861CBB8B5F005ABCAA /* Shakeel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A5851CBB8B5F005ABCAA /* Shakeel.swift */; };
+		6547A58D1CBB9CA2005ABCAA /* USPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A58C1CBB9CA2005ABCAA /* USPS.swift */; };
 		65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC34E11C9D23FB00412394 /* MessageCell.swift */; };
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
 		CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6547A5851CBB8B5F005ABCAA /* Shakeel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeel.swift; sourceTree = "<group>"; };
+		6547A58C1CBB9CA2005ABCAA /* USPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USPS.swift; sourceTree = "<group>"; };
 		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6547A5881CBB9BE9005ABCAA /* Shakeel */ = {
+			isa = PBXGroup;
+			children = (
+				6547A5851CBB8B5F005ABCAA /* Shakeel.swift */,
+				CDCE4C951C969050004A0E07 /* User.swift */,
+				CDCE4C971C969066004A0E07 /* Device.swift */,
+				CDCE4C991C96907C004A0E07 /* Order.swift */,
+				CDCE4C9B1C96908C004A0E07 /* Shipment.swift */,
+				CD1606F91C9E026E0082EF9C /* Thread.swift */,
+				CD1606FB1C9E031C0082EF9C /* Message.swift */,
+			);
+			name = Shakeel;
+			sourceTree = "<group>";
+		};
+		6547A5891CBB9BF1005ABCAA /* USPS */ = {
+			isa = PBXGroup;
+			children = (
+				6547A58C1CBB9CA2005ABCAA /* USPS.swift */,
+			);
+			name = USPS;
+			sourceTree = "<group>";
+		};
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +132,8 @@
 		CDCE4C941C968F5C004A0E07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CDCE4C951C969050004A0E07 /* User.swift */,
-				CDCE4C971C969066004A0E07 /* Device.swift */,
-				CDCE4C991C96907C004A0E07 /* Order.swift */,
-				CDCE4C9B1C96908C004A0E07 /* Shipment.swift */,
-				CD1606F91C9E026E0082EF9C /* Thread.swift */,
-				CD1606FB1C9E031C0082EF9C /* Message.swift */,
+				6547A5881CBB9BE9005ABCAA /* Shakeel */,
+				6547A5891CBB9BF1005ABCAA /* USPS */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -245,6 +267,8 @@
 				CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
 				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,
+				6547A58D1CBB9CA2005ABCAA /* USPS.swift in Sources */,
+				6547A5861CBB8B5F005ABCAA /* Shakeel.swift in Sources */,
 				CDCE4CB61C98E66A004A0E07 /* ProfileViewController.swift in Sources */,
 				CD6C06081CB245F3007392EB /* AddAnotherDeviceViewController.swift in Sources */,
 				CDFFF01E1C7F61C100F664C9 /* AppDelegate.swift in Sources */,
@@ -373,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = shakeel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = shakeel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
 				PRODUCT_NAME = "$(TARGET_NAME)";

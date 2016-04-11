@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Thread: NSObject {
+class Thread: Shakeel {
     var messages: [Message]?
 }

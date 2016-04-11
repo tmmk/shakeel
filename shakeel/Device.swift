@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Device: NSObject {
+class Device: Shakeel {
     
     var nickname: String?
     var manufacturer: String?

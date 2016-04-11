@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Shipment: NSObject {
+class Shipment: Shakeel {
     
     var id: Int?
     var price: Double?

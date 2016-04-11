@@ -11,14 +11,14 @@ import UIKit
 // usage:
 //  creating a new user: User.create(username: "", password: "", display_name: "")
 //  modifying a user: existinguser.update("profile_image_url", "");
-//  getting a user by ID: User.getUserByIDWithCompletion(id: "", completion: (user: User?) -> () in { print(user) });
-//  getting a user by username: User.getUserByUsernameWithCompletion(username: "", completion: (user: User?) -> () in { print(user) });
+//  getting a user by ID: User.get(id: "", username: nil, completion: (user: User?) -> () in { print(user) });
+//  getting a user by username: User.get(id: nil, username: "", completion: (user: User?) -> () in { print(user) });
 
-class User: NSObject {
+class User: Shakeel {
     var id: String? {
         didSet {
             if(id != nil && id != "") {
-                reloadUserDevices();
+                cacheUserDevices();
             }
         }
     }
@@ -28,94 +28,64 @@ class User: NSObject {
     var profile_image_url: String?
     
     var devices: [Device]?
-    
-    func reloadUserDevices() {
-        User.api("UserId=\(id)", endpoint: "devices/get/") { (response: AnyObject?) -> () in
-            let responseDictionary = response as! [NSDictionary];
-            var devices: [Device]?;
-            for device in responseDictionary {
-                devices?.append(Device(dictionary: device)!);
-            }
-            self.devices = devices;
-        }
-    }
-    
-    func update(key: String, value: String) {
-        if(key == "username") {
-            fatalError("user api: usernames are permanent. modifications to usernames are not permitted.")
-        }
-        User.api("id=\(id),\(key)=\(value)", endpoint: "users/modify/", completion: nil);
-    }
-    
+
     class func create(username: String, password: String, display_name: String) {
         let user = User();
         user.username = username;
         user.password = password;
         user.display_name = display_name;
-        User.api("username=\(username),password=\(password),display_name=\(display_name)", endpoint: "users/create/") { (response: AnyObject?) -> () in
-            let responseDictionary = response as! NSDictionary;
-            user.id = responseDictionary["id"] as! String;
+        
+        user.api(["username": username, "password": password, "display_name": display_name], endpoint: "users/create/") { (response: User?) -> () in
+            user.id = response!.id;
         }
     }
     
-    class func instantiateWithDictionary(dictionary: NSDictionary?) -> User? {
-        if(dictionary == nil) {
-            return nil
-        }
-        let user = User();
-        user.id = dictionary!["id"] as? String;
-        user.username = dictionary!["username"] as? String;
-        user.password = dictionary!["password"] as? String;
-        user.display_name = dictionary!["display_name"] as? String;
-        user.profile_image_url = dictionary!["profile_image_url"] as? String;
-        return user;
-    }
-
-    class func getUserByIDWithCompletion(id: String, completion: ((User?) -> ())?) {
-        User.api("id=\(id)", endpoint: "users/get/", completion: completion)
+    // Supply EITHER the ID parameter OR the Username parameter.
+    //    if BOTH parameters are supplied, the ID will prevail and Username parameter will not be considered.
+    class func get(id: String? = nil, username: String? = nil, completion: ((User?) -> ())?) {
+        User().api(["id": id ?? "", "username": username ?? ""], endpoint: "users/get/", completion: completion)
     }
     
-    class func getUserByUsernameWithCompletion(username: String, completion: ((User?) -> ())?) {
-        User.api("username=\(username)", endpoint: "users/get/", completion: completion)
+    func update(key: String, value: String, completion: ((User?) -> ())? = nil) {
+        api(["id": id!, key: value], endpoint: "users/modify/", completion: completion);
     }
     
-    class func getURLFromImage(image: UIImage) {
+    class func URLFromProfileImage(image: UIImage) {
         // upload and get url string
         
         return // url string
     }
     
-    class func api(query: String, endpoint: String, completion: ((User?) -> ())?){
-        let url: NSURL = NSURL(string: "https://api.sfrepairguy.com/" + endpoint)!
-        let session = NSURLSession.sharedSession()
-        
-        let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "POST"
-        request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        
-        let paramString = query
-        request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
-        
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
-            
-            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("api network error")
-                return
+    func cacheUserDevices() {
+        //        api(["UserId": id!], endpoint: "devices/get/") { (response: AnyObject?) -> () in
+        //            let responseDictionary = response as! [NSDictionary];
+        //            var devices: [Device]?;
+        //            for device in responseDictionary {
+        //                devices?.append(Device(dictionary: device)!);
+        //            }
+        //            self.devices = devices;
+        //        }
+    }
+    
+    override init() {
+        super.init();
+    }
+    
+    init(dictionary: NSDictionary) {
+        super.init();
+        id = dictionary["id"] as? String;
+        username = dictionary["username"] as? String;
+        password = dictionary["password"] as? String;
+        display_name = dictionary["display_name"] as? String;
+        profile_image_url = dictionary["profile_image_url"] as? String;
+    }
+    
+    // override Shakeel API to cast returned objects as type User
+    func api(parameters: NSDictionary, endpoint: String, completion: ((User?) -> ())?){
+        Shakeel.api(parameters, endpoint: endpoint) { (dictionary: NSDictionary?) in
+            if(completion != nil) {
+                completion?(User(dictionary: dictionary!));
             }
-            
-            do {
-                let dataObject = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments);
-                if(completion != nil) {
-                    completion!(User.instantiateWithDictionary(dataObject as? NSDictionary));
-                }
-            } catch(_) {
-                
-            }
-            
         }
-        
-        task.resume()
     }
 }

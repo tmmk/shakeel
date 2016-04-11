@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Message: NSObject {
+class Message: Shakeel {
     var author: User?
     var time: NSDate?
     var message: String?
