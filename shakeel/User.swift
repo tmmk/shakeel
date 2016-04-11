@@ -30,7 +30,7 @@ class User: NSObject {
     var devices: [Device]?
     
     func reloadUserDevices() {
-        User.api("UserId=\(id)", endpoint: "/devices/get/") { (response: AnyObject?) -> () in
+        User.api("UserId=\(id)", endpoint: "devices/get/") { (response: AnyObject?) -> () in
             let responseDictionary = response as! [NSDictionary];
             var devices: [Device]?;
             for device in responseDictionary {
@@ -44,7 +44,7 @@ class User: NSObject {
         if(key == "username") {
             fatalError("user api: usernames are permanent. modifications to usernames are not permitted.")
         }
-        User.api("id=\(id),\(key)=\(value)", endpoint: "/users/modify/", completion: nil);
+        User.api("id=\(id),\(key)=\(value)", endpoint: "users/modify/", completion: nil);
     }
     
     class func create(username: String, password: String, display_name: String) {
@@ -52,7 +52,7 @@ class User: NSObject {
         user.username = username;
         user.password = password;
         user.display_name = display_name;
-        User.api("username=\(username),password=\(password),display_name=\(display_name)", endpoint: "/users/create/") { (response: AnyObject?) -> () in
+        User.api("username=\(username),password=\(password),display_name=\(display_name)", endpoint: "users/create/") { (response: AnyObject?) -> () in
             let responseDictionary = response as! NSDictionary;
             user.id = responseDictionary["id"] as! String;
         }
@@ -72,11 +72,11 @@ class User: NSObject {
     }
 
     class func getUserByIDWithCompletion(id: String, completion: ((User?) -> ())?) {
-        User.api("id=\(id)", endpoint: "/users/get/", completion: completion)
+        User.api("id=\(id)", endpoint: "users/get/", completion: completion)
     }
     
     class func getUserByUsernameWithCompletion(username: String, completion: ((User?) -> ())?) {
-        User.api("username=\(username)", endpoint: "/users/get/", completion: completion)
+        User.api("username=\(username)", endpoint: "users/get/", completion: completion)
     }
     
     class func getURLFromImage(image: UIImage) {
@@ -86,7 +86,7 @@ class User: NSObject {
     }
     
     class func api(query: String, endpoint: String, completion: ((User?) -> ())?){
-        let url: NSURL = NSURL(string: "https://www.sfrepairguy.com/api" + endpoint)!
+        let url: NSURL = NSURL(string: "https://api.sfrepairguy.com/" + endpoint)!
         let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
