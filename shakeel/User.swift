@@ -23,7 +23,7 @@ class User: Shakeel {
         }
     }
     var username: String?
-    var password: String?
+    var password: String? // never contains cleartext password
     var display_name: String?
     var profile_image_url: String?
     
@@ -32,7 +32,7 @@ class User: Shakeel {
     class func create(username: String, password: String, display_name: String) {
         let user = User();
         user.username = username;
-        user.password = password;
+        user.password = password.sha1();
         user.display_name = display_name;
         
         user.api(["username": username, "password": password, "display_name": display_name], endpoint: "users/create/") { (response: User?) -> () in
@@ -67,6 +67,11 @@ class User: Shakeel {
         //        }
     }
     
+    // returns true if the foreign string is equal to the user's current password
+    func passwordDoesMatch(foreign: String) -> Bool {
+        return foreign.sha1() == password;
+    }
+    
     override init() {
         super.init();
     }
@@ -75,7 +80,7 @@ class User: Shakeel {
         super.init();
         id = dictionary["id"] as? String;
         username = dictionary["username"] as? String;
-        password = dictionary["password"] as? String;
+        password = dictionary["password"] as? String; // not cleartext
         display_name = dictionary["display_name"] as? String;
         profile_image_url = dictionary["profile_image_url"] as? String;
     }

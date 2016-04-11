@@ -46,6 +46,7 @@
 		6547A58C1CBB9CA2005ABCAA /* USPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USPS.swift; sourceTree = "<group>"; };
 		6547A5901CBBA564005ABCAA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6547A5931CBBA5E8005ABCAA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		6567DD6E1CBC45380095D6F0 /* shakeel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shakeel-Bridging-Header.h"; sourceTree = "<group>"; };
 		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +119,17 @@
 				6547A5931CBBA5E8005ABCAA /* Keychain.swift */,
 			);
 			name = Keychain;
+			sourceTree = "<group>";
+		};
+		65A046A61CBC465C00340719 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */,
+				CDFFF0241C7F61C100F664C9 /* Assets.xcassets */,
+				CDFFF0291C7F61C100F664C9 /* Info.plist */,
+				6567DD6E1CBC45380095D6F0 /* shakeel-Bridging-Header.h */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
@@ -195,9 +207,7 @@
 				CDCE4CB91C990572004A0E07 /* Views */,
 				CDCE4C941C968F5C004A0E07 /* Models */,
 				CDCE4CBA1C990622004A0E07 /* Storyboards */,
-				CDFFF01D1C7F61C100F664C9 /* AppDelegate.swift */,
-				CDFFF0241C7F61C100F664C9 /* Assets.xcassets */,
-				CDFFF0291C7F61C100F664C9 /* Info.plist */,
+				65A046A61CBC465C00340719 /* Resources */,
 			);
 			path = shakeel;
 			sourceTree = "<group>";
@@ -228,7 +238,7 @@
 		CDFFF0121C7F61C100F664C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ccsf;
 				TargetAttributes = {
@@ -412,11 +422,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = shakeel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shakeel/shakeel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,11 +437,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = shakeel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ccsf.shakeel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shakeel/shakeel-Bridging-Header.h";
 			};
 			name = Release;
 		};
