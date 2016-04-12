@@ -11,6 +11,7 @@
 		6547A58D1CBB9CA2005ABCAA /* USPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A58C1CBB9CA2005ABCAA /* USPS.swift */; };
 		6547A5911CBBA564005ABCAA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6547A5901CBBA564005ABCAA /* Security.framework */; };
 		6547A5941CBBA5E8005ABCAA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A5931CBBA5E8005ABCAA /* Keychain.swift */; };
+		65954C831CBC728F00E5AEB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65954C821CBC728F00E5AEB9 /* LoginViewController.swift */; };
 		65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC34E11C9D23FB00412394 /* MessageCell.swift */; };
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
 		CD1606F61C9DFC160082EF9C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */; };
@@ -47,6 +48,7 @@
 		6547A5901CBBA564005ABCAA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6547A5931CBBA5E8005ABCAA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		6567DD6E1CBC45380095D6F0 /* shakeel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shakeel-Bridging-Header.h"; sourceTree = "<group>"; };
+		65954C821CBC728F00E5AEB9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,42 @@
 			name = Keychain;
 			sourceTree = "<group>";
 		};
+		6580D4881CBC714200475812 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
+				CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		6580D4891CBC714B00475812 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
+				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
+				CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */,
+				CDCE4CA91C98E401004A0E07 /* EnterSerialNumberViewController.swift */,
+				CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */,
+				CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */,
+				CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		6580D48A1CBC714F00475812 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				65954C821CBC728F00E5AEB9 /* LoginViewController.swift */,
+				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
+				CD6C06011CB1F86D007392EB /* DevicesViewController.swift */,
+				CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */,
+				CD6C06051CB23C1E007392EB /* EditProfileViewController.swift */,
+				CD6C06091CB26FB0007392EB /* DeviceDetailsViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		65A046A61CBC465C00340719 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,21 +173,10 @@
 		CDCE4C911C965173004A0E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6580D4881CBC714200475812 /* Orders */,
+				6580D4891CBC714B00475812 /* Home */,
+				6580D48A1CBC714F00475812 /* Profile */,
 				65F5FB951C9D1083001AD5DA /* TabBarController.swift */,
-				CDCE4C921C9651A0004A0E07 /* HomeViewController.swift */,
-				CDCE4CA51C98DECB004A0E07 /* MyDevicesViewController.swift */,
-				CDCE4CA71C98E395004A0E07 /* ChooseAnotherDeviceViewController.swift */,
-				CDCE4CA91C98E401004A0E07 /* EnterSerialNumberViewController.swift */,
-				CDCE4CAB1C98E46B004A0E07 /* WriteUpViewController.swift */,
-				CDCE4CAD1C98E569004A0E07 /* ChooseShippingViewController.swift */,
-				CDCE4CAF1C98E5A8004A0E07 /* PaymentViewController.swift */,
-				CD1606F51C9DFC160082EF9C /* OrdersViewController.swift */,
-				CDCE4CB71C98EFFE004A0E07 /* OrderViewController.swift */,
-				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
-				CD6C06051CB23C1E007392EB /* EditProfileViewController.swift */,
-				CD6C06011CB1F86D007392EB /* DevicesViewController.swift */,
-				CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */,
-				CD6C06091CB26FB0007392EB /* DeviceDetailsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -289,6 +316,7 @@
 				65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */,
 				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
 				CD6C060A1CB26FB0007392EB /* DeviceDetailsViewController.swift in Sources */,
+				65954C831CBC728F00E5AEB9 /* LoginViewController.swift in Sources */,
 				CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
 				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,

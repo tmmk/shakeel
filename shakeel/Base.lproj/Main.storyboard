@@ -44,7 +44,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjS-AE-NSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="62"/>
+            <point key="canvasLocation" x="-140" y="-829"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="62"/>
+            <point key="canvasLocation" x="295" y="-829"/>
         </scene>
         <!--My Devices-->
         <scene sceneID="flo-dC-JaJ">
@@ -110,7 +110,7 @@
                                         <rect key="frame" x="0.0" y="28" width="280" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bPN-3h-msd" id="60S-Ok-yAW">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHR-Z6-Z6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-497"/>
+            <point key="canvasLocation" x="724" y="-1388"/>
         </scene>
         <!--Choose Another Device-->
         <scene sceneID="gk0-VP-b2W">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bA-db-2bU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="-497"/>
+            <point key="canvasLocation" x="1207" y="-1388"/>
         </scene>
         <!--Enter Serial Number-->
         <scene sceneID="Xdu-mH-AWY">
@@ -239,7 +239,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1662" y="86"/>
+            <point key="canvasLocation" x="1602" y="-797"/>
         </scene>
         <!--Select Issue-->
         <scene sceneID="V2a-GG-lnz">
@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtV-Se-Z7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="86"/>
+            <point key="canvasLocation" x="2005" y="-797"/>
         </scene>
         <!--Write Up-->
         <scene sceneID="Nje-vK-k8b">
@@ -329,7 +329,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2444" y="86"/>
+            <point key="canvasLocation" x="2384" y="-797"/>
         </scene>
         <!--Camera-->
         <scene sceneID="bXV-zb-cN4">
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjW-16-aFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2641" y="-605"/>
+            <point key="canvasLocation" x="2633" y="-1496"/>
         </scene>
         <!--Choose Shipping-->
         <scene sceneID="KrV-fa-c2j">
@@ -389,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPm-6l-6Xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2860" y="86"/>
+            <point key="canvasLocation" x="2800" y="-797"/>
         </scene>
         <!--Payment-->
         <scene sceneID="k3u-CG-afb">
@@ -449,7 +449,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3353" y="86"/>
+            <point key="canvasLocation" x="3293" y="-797"/>
         </scene>
         <!--Orders Navigation Controller-->
         <scene sceneID="Iq5-7B-3uG">
@@ -469,7 +469,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOg-dL-hpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="2776"/>
+            <point key="canvasLocation" x="-140" y="1864"/>
         </scene>
         <!--Orders-->
         <scene sceneID="gey-Dm-dK6">
@@ -491,7 +491,7 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Wj-yM-Hba" id="pFh-ap-qqc">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order #123356" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-L7-7mb">
@@ -546,7 +546,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M6-uz-oVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="2776"/>
+            <point key="canvasLocation" x="321" y="1864"/>
         </scene>
         <!--Order-->
         <scene sceneID="gFT-1Z-Y74">
@@ -720,7 +720,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="769" y="2776"/>
+            <point key="canvasLocation" x="761" y="1864"/>
         </scene>
         <!--Profile Navigation Controller-->
         <scene sceneID="XOT-vw-j7k">
@@ -739,7 +739,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDL-OI-7Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="1324"/>
+            <point key="canvasLocation" x="-140" y="521"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Un4-9Z-v1A">
@@ -782,7 +782,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grx-n1-Haa">
-                                <rect key="frame" x="20" y="278" width="72" height="30"/>
+                                <rect key="frame" x="20" y="275" width="72" height="30"/>
                                 <state key="normal" title="My Orders"/>
                                 <connections>
                                     <action selector="onOrdersButton:" destination="h92-A7-Vg0" eventType="touchUpInside" id="NWe-rP-SfK"/>
@@ -811,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K51-wM-224" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="1324"/>
+            <point key="canvasLocation" x="337" y="521"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="mdG-mM-U0D">
@@ -886,7 +886,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="782" y="666"/>
+            <point key="canvasLocation" x="774" y="-129"/>
         </scene>
         <!--Devices-->
         <scene sceneID="Fj0-pk-SvR">
@@ -915,7 +915,7 @@
                                         <rect key="frame" x="0.0" y="28" width="280" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wu0-RP-hPu" id="GlH-10-N9c">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -928,12 +928,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuF-E8-F04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="1848"/>
+            <point key="canvasLocation" x="774" y="1045"/>
         </scene>
         <!--Add Another Device-->
         <scene sceneID="hp1-Az-Fzg">
             <objects>
-                <viewController title="Add Another Device" id="oxu-Bd-p7T" sceneMemberID="viewController">
+                <viewController title="Add Another Device" id="oxu-Bd-p7T" customClass="AddAnotherDeviceViewController" customModule="shakeel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="njN-yv-Me1"/>
                         <viewControllerLayoutGuide type="bottom" id="zzj-Ra-baE"/>
@@ -973,7 +973,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kas-Wj-ozr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="1454"/>
+            <point key="canvasLocation" x="1207" y="651"/>
         </scene>
         <!--Device Details-->
         <scene sceneID="bct-UL-XmB">
