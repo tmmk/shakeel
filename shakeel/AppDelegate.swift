@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -60,3 +59,17 @@ extension String {
     }
 }
 
+func delay(delay: Double, closure: ()->()) { // Copied from my previous CodePath assignments -- Tejen
+    dispatch_after(
+        dispatch_time(
+            DISPATCH_TIME_NOW,
+            Int64(delay * Double(NSEC_PER_SEC))
+        ),
+        dispatch_get_main_queue(),
+        closure
+    );
+}
+
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+let Storyboard = UIStoryboard(name: "Main", bundle:nil);
+var shakeelTabController: UITabBarController? = nil;

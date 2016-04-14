@@ -1,21 +1,19 @@
 //
-//  TabBarController.swift
+//  LoginViewController.swift
 //  shakeel
 //
-//  Created by Tejen Hasmukh Patel on 3/18/16.
+//  Created by Tejen Hasmukh Patel on 4/11/16.
 //  Copyright © 2016 ccsf. All rights reserved.
 //
 
 import UIKit
 
-class TabBarController: UITabBarController {
-    
+class LoginViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        shakeelTabController = self;
-        selectedIndex = 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +21,10 @@ class TabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onCancelButton(sender: AnyObject) {
+        shakeelTabController?.selectedIndex = 1;
+        dismissViewControllerAnimated(true, completion: nil);
+    }
 
     /*
     // MARK: - Navigation

@@ -15,6 +15,13 @@ import UIKit
 //  getting a user by username: User.get(id: nil, username: "", completion: (user: User?) -> () in { print(user) });
 
 class User: Shakeel {
+    
+    // Hold currently logged-in user and protect write-access from other classes.
+    static private var _currentUser: User? = nil; // No other class besides User can modify this private variable
+    static var currentUser: User? { // return read-only variable to a global scope
+        return _currentUser;
+    }
+    
     var id: String? {
         didSet {
             if(id != nil && id != "") {
@@ -23,7 +30,7 @@ class User: Shakeel {
         }
     }
     var username: String?
-    var password: String? // never contains cleartext password
+    private var password: String? // Never contains cleartext password. Only the User class can access this private variable... but passwordDoesMatch() is global :)
     var display_name: String?
     var profile_image_url: String?
     
