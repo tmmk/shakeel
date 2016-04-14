@@ -11,8 +11,8 @@ import UIKit
 // usage:
 //  creating a new user: User.create(username: "", password: "", display_name: "")
 //  modifying a user: existinguser.update("profile_image_url", "");
-//  getting a user by ID: User.get(id: "", username: nil, completion: (user: User?) -> () in { print(user) });
-//  getting a user by username: User.get(id: nil, username: "", completion: (user: User?) -> () in { print(user) });
+//  getting a user by ID: User.get({ (user: User?) in print(user); }, id: 123);
+//  getting a user by username: User.get({ (user: User?) in print(user); }, username: "shakeel156");
 
 class User: Shakeel {
     
@@ -22,10 +22,10 @@ class User: Shakeel {
         return _currentUser;
     }
     
-    var id: String? {
+    var id: Int? {
         didSet {
-            if(id != nil && id != "") {
-                cacheUserDevices();
+            if(id != nil && id != 0) {
+                populateDevices();
             }
         }
     }
@@ -47,10 +47,13 @@ class User: Shakeel {
         }
     }
     
-    // Supply EITHER the ID parameter OR the Username parameter.
-    //    if BOTH parameters are supplied, the ID will prevail and Username parameter will not be considered.
-    class func get(id: String? = nil, username: String? = nil, completion: ((User?) -> ())?) {
-        User().api(["id": id ?? "", "username": username ?? ""], endpoint: "users/get/", completion: completion)
+    // completion parameter first, else Swift won't allow function overloading
+    class func get(completion: ((User?) -> ()), id: Int) {
+        User().api(["id": "\(id)"], endpoint: "users/get/", completion: completion)
+    }
+    
+    class func get(completion: ((User?) -> ()), username: String) {
+        User().api(["username": username], endpoint: "users/get/", completion: completion)
     }
     
     func update(key: String, value: String, completion: ((User?) -> ())? = nil) {
@@ -63,15 +66,10 @@ class User: Shakeel {
         return // url string
     }
     
-    func cacheUserDevices() {
-        //        api(["UserId": id!], endpoint: "devices/get/") { (response: AnyObject?) -> () in
-        //            let responseDictionary = response as! [NSDictionary];
-        //            var devices: [Device]?;
-        //            for device in responseDictionary {
-        //                devices?.append(Device(dictionary: device)!);
-        //            }
-        //            self.devices = devices;
-        //        }
+    func populateDevices() {
+        Device.get({ (devices: [Device]?) in
+            self.devices = devices;
+        }, UserID: self.id!);
     }
     
     // returns true if the foreign string is equal to the user's current password
@@ -85,14 +83,15 @@ class User: Shakeel {
     
     init(dictionary: NSDictionary) {
         super.init();
-        id = dictionary["id"] as? String;
+        
+        id = dictionary["id"] as? Int;
         username = dictionary["username"] as? String;
         password = dictionary["password"] as? String; // not cleartext
         display_name = dictionary["display_name"] as? String;
         profile_image_url = dictionary["profile_image_url"] as? String;
     }
     
-    // override Shakeel API to cast returned objects as type User
+    // overload Shakeel API to cast returned objects as type User
     func api(parameters: NSDictionary, endpoint: String, completion: ((User?) -> ())?){
         Shakeel.api(parameters, endpoint: endpoint) { (dictionary: NSDictionary?) in
             if(completion != nil) {
@@ -100,4 +99,5 @@ class User: Shakeel {
             }
         }
     }
+    
 }

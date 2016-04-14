@@ -12,7 +12,7 @@ class Shipment: Shakeel {
     
     var id: Int?
     var price: Double?
-    var shipper: String?
+    var carrier: String?
     var tracking_number: String?
     var direction: Direction?
     var comment: String?
