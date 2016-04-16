@@ -17,7 +17,20 @@ import UIKit
 class User: Shakeel {
     
     // Hold currently logged-in user and protect write-access from other classes.
-    static private var _currentUser: User? = nil; // No other class besides User can modify this private variable
+    // No other class besides User can modify this private variable.
+    // If/when modified, this variable saves itself to the iOS Keychain to persist its contents.
+    // Default value is either nil or the persisted value from the Keychain.
+    static private var _currentUser: User? = User(dictionary: (NSKeyedUnarchiver.unarchiveObjectWithData(Keychain.getData("shakeelCurrentUser") != nil ? Keychain.getData("shakeelCurrentUser")! : NSData()) as? NSDictionary) ?? nil) {
+        didSet {
+            if(_currentUser != nil) {
+                // persist new current user
+                Keychain.set("shakeelCurrentUser", value: NSKeyedArchiver.archivedDataWithRootObject(_currentUser!.toDictionary()!));
+            } else {
+                Keychain.delete("shakeelCurrentUser");
+            }
+        }
+    }
+    // Only way to change this variable's value is by using the User.login() or User.logout() functions.
     static var currentUser: User? { // return read-only variable to a global scope
         return _currentUser;
     }
@@ -35,15 +48,31 @@ class User: Shakeel {
     var profile_image_url: String?
     
     var devices: [Device]?
+    
+    // This function is the only way to change the currentUser variable.
+    // Supply the desired user to be logged in, and the password (in cleartext) of this user, to mark the user as logged-in.
+    class func login(user: User, password: String) -> Bool {
+        if(user.passwordDoesMatch(password)){
+            _currentUser = user; // This will also persist the user, until manually Signed Out using User.logout();
+            print("\(user.username) is now signed in as the current user.");
+            return true;
+        }
+        return false;
+    }
+    
+    class func logout() {
+        _currentUser = nil;
+    }
 
-    class func create(username: String, password: String, display_name: String) {
+    class func create(username: String, password: String, display_name: String, completion: ((User?) -> ())? = nil) {
         let user = User();
         user.username = username;
         user.password = password.sha1();
         user.display_name = display_name;
         
-        user.api(["username": username, "password": password, "display_name": display_name], endpoint: "users/create/") { (response: User?) -> () in
+        user.api(["username": username, "password": user.password!, "display_name": display_name], endpoint: "users/create/") { (response: User?) -> () in
             user.id = response!.id;
+            completion?(user);
         }
     }
     
@@ -81,14 +110,26 @@ class User: Shakeel {
         super.init();
     }
     
-    init(dictionary: NSDictionary) {
+    init?(dictionary: NSDictionary?) {
         super.init();
-        
-        id = dictionary["id"] as? Int;
-        username = dictionary["username"] as? String;
-        password = dictionary["password"] as? String; // not cleartext
-        display_name = dictionary["display_name"] as? String;
-        profile_image_url = dictionary["profile_image_url"] as? String;
+    
+        if(dictionary == nil) {
+            return nil;
+        }
+    
+        id = dictionary!["id"] as? Int;
+        username = dictionary!["username"] as? String;
+        password = dictionary!["password"] as? String; // not cleartext
+        display_name = dictionary!["display_name"] as? String;
+        profile_image_url = dictionary!["profile_image_url"] as? String;
+        // also add to getPersistedUser()
+    }
+    
+    func toDictionary() -> NSDictionary? {
+        if(id == nil || id <= 0) {
+            return nil;
+        }
+        return ["id": id!, "username": username!, "password": password!, "display_name": display_name!, "profile_image_url": profile_image_url ?? ""];
     }
     
     // overload Shakeel API to cast returned objects as type User
