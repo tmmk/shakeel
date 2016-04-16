@@ -11,6 +11,7 @@
 		6547A58D1CBB9CA2005ABCAA /* USPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A58C1CBB9CA2005ABCAA /* USPS.swift */; };
 		6547A5911CBBA564005ABCAA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6547A5901CBBA564005ABCAA /* Security.framework */; };
 		6547A5941CBBA5E8005ABCAA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547A5931CBBA5E8005ABCAA /* Keychain.swift */; };
+		6593397E1CC2431D00F4AD85 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593397D1CC2431D00F4AD85 /* SignupViewController.swift */; };
 		65954C831CBC728F00E5AEB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65954C821CBC728F00E5AEB9 /* LoginViewController.swift */; };
 		65CC34E21C9D23FB00412394 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC34E11C9D23FB00412394 /* MessageCell.swift */; };
 		65F5FB961C9D1083001AD5DA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F5FB951C9D1083001AD5DA /* TabBarController.swift */; };
@@ -48,6 +49,7 @@
 		6547A5901CBBA564005ABCAA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6547A5931CBBA5E8005ABCAA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		6567DD6E1CBC45380095D6F0 /* shakeel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shakeel-Bridging-Header.h"; sourceTree = "<group>"; };
+		6593397D1CC2431D00F4AD85 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		65954C821CBC728F00E5AEB9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65CC34E11C9D23FB00412394 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		65F5FB951C9D1083001AD5DA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				65954C821CBC728F00E5AEB9 /* LoginViewController.swift */,
+				6593397D1CC2431D00F4AD85 /* SignupViewController.swift */,
 				CDCE4CB51C98E66A004A0E07 /* ProfileViewController.swift */,
 				CD6C06011CB1F86D007392EB /* DevicesViewController.swift */,
 				CD6C06071CB245F3007392EB /* AddAnotherDeviceViewController.swift */,
@@ -317,6 +320,7 @@
 				CDCE4C9C1C96908C004A0E07 /* Shipment.swift in Sources */,
 				CD6C060A1CB26FB0007392EB /* DeviceDetailsViewController.swift in Sources */,
 				65954C831CBC728F00E5AEB9 /* LoginViewController.swift in Sources */,
+				6593397E1CC2431D00F4AD85 /* SignupViewController.swift in Sources */,
 				CD1606FA1C9E026E0082EF9C /* Thread.swift in Sources */,
 				CDCE4CAE1C98E56A004A0E07 /* ChooseShippingViewController.swift in Sources */,
 				CD1606F81C9DFD520082EF9C /* OrderCell.swift in Sources */,
