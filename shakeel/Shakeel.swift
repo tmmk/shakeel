@@ -41,9 +41,6 @@ class Shakeel: NSObject {
                 return
             }
             
-            // print out raw http response body
-            //    print(NSString(data: data!, encoding: NSUTF8StringEncoding))
-            
             do {
                 let dataObject = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as? NSDictionary
                 if(dataObject?.valueForKey("error") != nil) {
@@ -52,12 +49,16 @@ class Shakeel: NSObject {
                     print(dataObject!["error"]!);
                     print("\n");
                     print("/#/#/#/#/#/#/#/#/#/#/");
+                    
+                    alert("Uh oh!", message: dataObject!["error"]! as! String, button: "Try Again");
                 }
                 if(completion != nil) {
                     completion!(dataObject);
                 }
             } catch(_) {
-                print("API Internal Server Error Occurred");
+                print("API Internal Server Error Occurred:");
+                // print out raw http response body
+                print(NSString(data: data!, encoding: NSUTF8StringEncoding));
             }
             
         }

@@ -70,6 +70,21 @@ func delay(delay: Double, closure: ()->()) { // Copied from my previous CodePath
     );
 }
 
+func alert(title: String, message: String, button: String) {
+    let alertController = UIAlertController(title: title, message:
+        message, preferredStyle: UIAlertControllerStyle.Alert)
+    alertController.addAction(UIAlertAction(title: button, style: UIAlertActionStyle.Default,handler: nil));
+    
+    if var topController = UIApplication.sharedApplication().keyWindow?.rootViewController {
+        while let presentedViewController = topController.presentedViewController {
+            topController = presentedViewController
+        }
+        delay(0.1, closure: {
+            topController.presentViewController(alertController, animated: true, completion: nil);
+        });
+    }
+}
+
 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
 let Storyboard = UIStoryboard(name: "Main", bundle:nil);
 var shakeelTabController: UITabBarController? = nil;
